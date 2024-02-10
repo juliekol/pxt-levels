@@ -1,6 +1,7 @@
 {
     "name": "levels",
     "description": "An extension that adds support for multiple levels in your game.",
+    "icon": "./static/libs/icon.png",
     "dependencies": {
         "device": "*"
     },
