@@ -1,17 +1,14 @@
- 
-
-
 > Open this page at [https://juliekol.github.io/pxt-levels/](https://juliekol.github.io/pxt-levels/)
 
 ## Overview
 
 This extension adds support for multiple levels in your game. For example, in a platformer, one tilemap will display the first level. When the player beats this level, we would move to the next level that will be displayed using a different tilemap.
 
-Each level is designated using an integer. The first level is 1.
+* Each level is designated using an integer. The first level is 1.
 
-For every level you support, you must add the `on start level` block. If your game has three levels, you must add three such blocks, one for each level.
+* For every level you support, you must add the `on start level` block. If your game has three levels, you must add three such blocks, one for each level.
 
-The best practice is to add the block `start level 1` in the `on start` block of your game.
+* The best practice is to add the block `start level 1` in the `on start` block of your game.
 
 ## Use as Extension
 
@@ -24,22 +21,27 @@ This repository can be added as an **extension** in MakeCode.
 
 ## Blocks
 
-`on start level N` - Contains the blocks that should run when level N is started. You must add such a block for every level you support.
+### `on start level N`
 
-`start level N` - Makes the game change the current level to N.
+Contains the blocks that should run when level N is started. You must add such a block for every level you support.
 
-`start next level` - Makes the game increase the current level by 1 and start it.
+### `start level N`
 
-`restart level` - Makes the game restart the current level.
+Makes the game change the current level to N.
 
-## Blocks preview
+### `start next level`
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+Makes the game increase the current level by 1 and start it.
 
-![A rendered view of the blocks](https://github.com/juliekol/pxt-levels/raw/master/.github/makecode/blocks.png)
+### `restart level`
 
-## Edit this project ![Build status badge](https://github.com/juliekol/pxt-levels/workflows/MakeCode/badge.svg)
+Makes the game restart the current level.
+
+## Example
+
+<img src="https://i.imgur.com/3xsrKTr.png" width=600 />
+
+## Edit this project
 
 To edit this repository in MakeCode.
 
