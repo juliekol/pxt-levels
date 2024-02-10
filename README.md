@@ -3,6 +3,16 @@
 
 > Open this page at [https://juliekol.github.io/pxt-levels/](https://juliekol.github.io/pxt-levels/)
 
+## Overview
+
+This extension adds support for multiple levels in your game. For example, in a platformer, one tilemap will display the first level. When the player beats this level, we would move to the next level that will be displayed using a different tilemap.
+
+Each level is designated using an integer. The first level is 1.
+
+For every level you support, you must add the `on start level` block. If your game has three levels, you must add three such blocks, one for each level.
+
+The best practice is to add the block `start level 1` in the `on start` block of your game.
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
@@ -12,13 +22,15 @@ This repository can be added as an **extension** in MakeCode.
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/juliekol/pxt-levels** and import
 
-## Edit this project ![Build status badge](https://github.com/juliekol/pxt-levels/workflows/MakeCode/badge.svg)
+## Blocks
 
-To edit this repository in MakeCode.
+`on start level N` - Contains the blocks that should run when level N is started. You must add such a block for every level you support.
 
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/juliekol/pxt-levels** and click import
+`start level N` - Makes the game change the current level to N.
+
+`start next level` - Makes the game increase the current level by 1 and start it.
+
+`restart level` - Makes the game restart the current level.
 
 ## Blocks preview
 
@@ -26,6 +38,14 @@ This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
 ![A rendered view of the blocks](https://github.com/juliekol/pxt-levels/raw/master/.github/makecode/blocks.png)
+
+## Edit this project ![Build status badge](https://github.com/juliekol/pxt-levels/workflows/MakeCode/badge.svg)
+
+To edit this repository in MakeCode.
+
+* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
+* click on **Import** then click on **Import URL**
+* paste **https://github.com/juliekol/pxt-levels** and click import
 
 #### Metadata (used for search, rendering)
 

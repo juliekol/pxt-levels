@@ -5,21 +5,6 @@ namespace levels {
     const levels: Array<() => void> = [];
 
     /**
-    Change the current level that is playing
-    **/
-    //% block
-    //% l.defl=1
-    export function startLevel(l: number = 1) {
-        currentLevel = l;
-        const handler = levels[l];
-        if (handler) {
-            handler();
-        } else {
-            console.error("ERROR: No 'on start level' block found for level " + l);
-        }
-    }
-
-    /**
     Restart the current level
     **/
     //% block
@@ -36,7 +21,23 @@ namespace levels {
     }
 
     /**
-    Set the code to run on the start of each level
+     Change the current level that is playing
+     @param l the level number
+     **/
+    //% block
+    //% l.defl=1
+    export function startLevel(l: number = 1) {
+        currentLevel = l;
+        const handler = levels[l];
+        if (handler) {
+            handler();
+        } else {
+            console.error("ERROR: No 'on start level' block found for level " + l);
+        }
+    }
+
+    /**
+    Define the code to run on the start of each level
     @param l the level number
     **/
     //% block="on start level $l"

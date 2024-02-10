@@ -1,14 +1,11 @@
 {
-    "name": "Levels demo",
-    "description": "",
+    "name": "Levels extension",
+    "description": "An extension that adds support for multiple levels in your game.",
     "dependencies": {
         "device": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
         "README.md",
-        "assets.json",
         "levels.ts"
     ],
     "testFiles": [
